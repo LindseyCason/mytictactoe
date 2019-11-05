@@ -1,0 +1,112 @@
+body {
+    font: 14px "Century Gothic", Futura, sans-serif;
+    margin: 20px;
+    background: rgb(189, 189, 189);
+  }
+  
+  /* ol, ul {
+    padding-left: 30px;
+  } */
+  
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+  }
+  
+  .square {
+    background: rgb(209, 59, 59);
+    border: 1px solid rgb(0, 0, 0);
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 100px;
+    height: 100px;
+    margin-right: -1px;
+    margin-top: -1px;
+    padding: 0;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .kbd-navigation .square:focus {
+    background: #ddd;
+  }
+  
+  /* #root{
+      max-width: 600px;
+      align-content: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  } */
+  .game {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-info {
+    /* margin-left: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:20px;
+    font-size: 24px;
+  }
+  ol{
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      flex-direction: column;
+  }
+  .buttonsCenter{
+      font-size: 20em;
+      width: 13rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+
+  }
+  button{
+      margin-top: 20px;
+      font-size: 1rem;
+      border-radius: 4px;
+      background-color: black;
+      color: rgb(212, 77, 77);
+      box-shadow: 5px 5px 20px rgb(201, 201, 201);
+      padding: 10px;
+      margin: 10px;
+  }
+  button.square{
+      margin: 4px;
+      color: rgb(0, 0, 0);
+      font-size: 4rem;
+      box-shadow: 10px 10px 20px rgb(177, 55, 55);
+      border-radius: 3px;
+  }
+  .boardcontainer{
+    /* box-shadow: 5px 5px 20px rgb(0, 0, 0); */
+    background: rgb(0, 0, 0);
+    padding:0px;
+    border-radius: 3px;
+    border: 10px solid black;
+  }
+  .game-board{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
