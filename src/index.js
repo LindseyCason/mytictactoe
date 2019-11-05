@@ -15,6 +15,7 @@ function Square(props){
     }
   
   class Board extends React.Component {
+    
     renderSquare(i) {
       return (<Square
       value ={this.props.squares[i]}
@@ -25,7 +26,8 @@ function Square(props){
   
     render() {
       return (
-        <div className="boardcontainer">
+        <div className="flexed">
+        <div className="boardcontainer">        
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}
@@ -42,8 +44,7 @@ function Square(props){
             {this.renderSquare(8)}
           </div>
         </div>          
-        // <button className="restart"  onClick={()=>window.location.reload()}>Restart Game</button>
-
+</div>
       );
     }
   }
@@ -105,10 +106,11 @@ function Square(props){
         if(winner){
             status = "The Winner Is: " + winner;
         }else{
-            status = 'Next Player: ' + (this.state.xIsNext ? "🐘" : "🏈");
+            status = 'Up Next: ' + (this.state.xIsNext ? "🐘" : "🏈");
         }
       return (
         <div className="game">
+          <img src="https://cdn.freebiesupply.com/logos/large/2x/alabama-crimson-tide-02-logo-png-transparent.png" className="bgimg" />
           <div className="game-board">
             <Board 
             squares={current.squares}
